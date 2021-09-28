@@ -75,3 +75,24 @@ body {
     bottom: 0px;
     z-index: 1;
 }
+.modal {
+    .modal-header {
+        background-color: $background-dark;
+
+        h4 {
+            color: white;
+        }
+
+        button {
+            color: white;
+        }
+    }
+
+    .model-boady {
+        background-color: $background-pale;
+
+        form {
+            padding: 20px;
+        }
+    }
+}

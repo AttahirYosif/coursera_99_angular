@@ -52,3 +52,15 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal .modal-header {
+  background-color: #512DA8; }
+  .modal .modal-header h4 {
+    color: white; }
+  .modal .modal-header button {
+    color: white; }
+
+.modal .model-boady {
+  background-color: #D1C4E9; }
+  .modal .model-boady form {
+    padding: 20px; }
