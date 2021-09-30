@@ -9,10 +9,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -30,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" id="btn-login"  >
+                    <a data-toggle="modal" id="btn-login">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -44,7 +46,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" id="btn-dismiss-login" class="close "  >&times;</button>
+                    <button type="button" id="btn-dismiss-login" class="close ">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -90,8 +92,7 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-sm-6">
-                        <a role="button" class="btn btn-block nav-link btn-warning" id="btn-reserve"
-                           >Reserve Table</a>
+                        <a role="button" class="btn btn-block nav-link btn-warning" id="btn-reserve">Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +107,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Reserve a table </h4>
-                        <button id="btn-dismiss-reserve" type="button" class="close" >&times;</button>
+                        <button id="btn-dismiss-reserve" type="button" class="close">&times;</button>
                     </div>
                     <div class="model-boady">
                         <form>
@@ -157,7 +158,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="offset-md-3 col-md-10">
-                                    <button type="button" class="btn btn-secondary"  id="btn-dismiss-reserve2">Cancel</button>
+                                    <button type="button" class="btn btn-secondary" id="btn-dismiss-reserve2">Cancel</button>
                                     <button type="submit" class="btn btn-primary">Reserve</button>
                                 </div>
                             </div>
@@ -336,46 +337,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-      
-        $(document).ready(function () {
-            $("#mycarousel").carousel({ interval: 2000 });
-            $("#btn-login").click(function () {
-                $("#loginModal").modal('show');
-            });
-
-            $("#btn-reserve").click(function () {
-                $("#reserveModel").modal('show');
-            });
-            $("#btn-dismiss-login").click(function () {
-                $("#loginModal").modal('hide');
-            });
-            $("#btn-dismiss-login2").click(function () {
-                $("#loginModal").modal('hide');
-            });
-            $("#btn-dismiss-reserve").click(function () {
-                $("#reserveModel").modal('hide');
-            });
-            $("#btn-dismiss-reserve2").click(function () {
-                $("#reserveModel").modal('hide');
-            });
-            $("#carouselButton").click(function () {
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')) {
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');
-                }
-            });
-        });
-    </script>
+    <script src="scripts/script.js"></script>
+    <!--endbuild-->
 </body>
 
 </html>

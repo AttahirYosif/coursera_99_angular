@@ -64,3 +64,8 @@ body {
   background-color: #D1C4E9; }
   .modal .model-boady form {
     padding: 20px; }
+
+.test {
+  color: red;
+  display: none;
+  margin: 0; }
